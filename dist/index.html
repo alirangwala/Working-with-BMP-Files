@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Image Processor</title>
+</head>
+<body>
+<h1>Image Processor</h1>
+<p>Only accepts BMP files</p>
+<input type="file" accept=".bmp" id="input" />
+<div id = "body">
+  <label for="negative">Negative</label>
+  <input type="checkbox" id="negative">
+  <br/>
+  <a id="download" href= "" download="negative" onClick="downloadImg(this);">
+    Click here to Download
+  </a>
+  <canvas id="canvas" width="0" height="0"></canvas>
+</div>
+<script src="index.js"></script>
+</body>
+</html>
